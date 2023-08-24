@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MyRandomUser</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/b3dba0aa51.js" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    </head>
+    <body>
+        <header>
+            <nav  class="navbar">
+                <a href="index.html"><h1 class="logo"> Random People Generator</h1></a>
+                <button onclick="toggleMenu()" class="toggle-button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul class="nav-list">
+                <li>
+                    <a href="index.html">
+                        <div>
+                            <i class="fa-solid fa-house"></i>
+                        </div>
+                        <div>
+                            Home
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="userPhotos.html">
+                        <div>
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div>
+                            User Photos
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="aboutMe.html">
+                        <div>
+                            <i class="fa-solid fa-book"></i>
+                        </div>
+                        <div>
+                            About Me
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html">
+                        <div>
+                            <i class="fa-solid fa-address-book"></i>
+                        </div>
+                        <div>
+                            Contact
+                        </div>
+                    </a>
+                </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- NAVBAR ^^^^^^^^^^^ -->
+        <!-- ---------------------------------------------- -->
+
+        <div class="top-container-userphotos">
+            <h1>PROFILE PHOTOS</h1>
+            <h3>Don't want the data? Here's 200 friendly faces.</h3>
+        </div>     
+        <div class="middle-container-userphotos" id="middle-container-userphotos">
+            <div class="genderDiv"><p>Gentlemen</p></div>
+            <div id="male" class="photosDiv"></div>
+            <div class="genderDiv" class="photosDiv"><p>Ladies</p></div>
+            <div id="female"></div>
+        </div>
+        <div class="bottom-container-userphotos">
+            <h1>RANDOM USER GENERATOR</h1>
+            <div>
+                <p>Designed by</p>
+                <img class="mihai-img" src="mihaiPascu.png" alt="" id="mihai-img">
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

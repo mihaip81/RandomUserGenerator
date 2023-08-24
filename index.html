@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MyRandomUser</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/b3dba0aa51.js" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    </head>
+    <body>
+        <!-- HERE IS MY NAV-BAR -->
+
+        <header>
+            <nav  class="navbar">
+                <a href="index.html"><h1 class="logo"> Random People Generator</h1></a>
+                <button onclick="toggleMenu()" class="toggle-button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul class="nav-list">
+                    <li>
+                        <a href="index.html">
+                            <div>
+                                <i class="fa-solid fa-house"></i>
+                            </div>
+                            <div>
+                                Home
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="userPhotos.html">
+                            <div>
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <div>
+                                User Photos
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="aboutMe.html">
+                            <div>
+                                <i class="fa-solid fa-book"></i>
+                            </div>
+                            <div>
+                                About Me
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html">
+                            <div>
+                                <i class="fa-solid fa-address-book"></i>
+                            </div>
+                            <div>
+                                Contact
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="searchGenerateContainer">
+            <div class="searchContainer">
+                <input type="text" id="nameFilter"  placeholder="Search for people">
+                <button onclick="getItems()" id="filterButton" class="buttonStyle">Search</button>
+            </div>
+            <div class="generatePeopleDiv">
+                <button onclick="generatePeople()" class="buttonStyle">Generate people</button>
+            </div>
+        </div>
+
+
+        <!-- HERE IS MY CARDS -->
+
+
+        <div class="itemsContainer" id="itemsContainer">
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

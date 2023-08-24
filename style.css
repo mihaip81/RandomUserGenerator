@@ -1,0 +1,698 @@
+/* GENERAL STYLING */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+/* THERE IS MY NAVBAR STYLING */
+
+.logo {
+    padding-left: 20px;
+    margin: 23px 0px;
+}
+
+.logo:hover{
+    color: aquamarine;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #6528F7;
+    color: white;
+
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+}
+
+.nav-list {
+    display: flex;
+}
+
+.navbar a {
+    color: white;
+}
+
+li {
+    padding: 0px 1rem;
+}
+
+.nav-list:first-child {
+    padding-left: 0px;
+}
+
+.nav-list:last-child {
+    padding-right: 0px;
+}
+
+.nav-list li:hover > a{
+    color: aquamarine;
+}
+
+.toggle-button {
+    background-color: #6528F7;
+    border: #6528F7;
+    position: absolute;
+    top: 1.7rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+
+}
+
+.bar {
+    background-color: white;
+    height: 3px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+@media (max-width:821px) {
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: start
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-list li {
+        padding: 0.5rem 1rem;
+    }
+
+    .nav-list i{
+        display: none;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+}
+
+/* THERE IS SEARCH AND GENERATE PEOPLE STYLING */
+
+.searchGenerateContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px;
+}
+
+.searchContainer{
+    display: flex;
+    align-items: center;
+}
+.searchContainer input{
+    width: 200px;
+}
+
+.buttonStyle{
+    width: 150px;
+    height: 30px;
+    margin-left: 10px;
+    color: white;
+    background-color: rgb(28, 145, 255);
+    font-size: 16px;
+    text-transform: none;
+    border-style: none;
+    border-radius: 5px;
+    transition: color .13s ease-in-out,background .13s ease-in-out,opacity .13s ease-in-out,box-shadow .13s ease-in-out;
+}
+
+.buttonStyle:hover{
+    background-color: #1C84FF;
+    cursor: pointer;
+}
+
+/* GENERATE PEOPLE PRINCIPAL CONTAINER STYLING */
+
+.itemsContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item-card{
+    text-align: center;
+    height: 100px;
+    margin: 5px;
+    padding-top: 10px;
+    box-shadow:2px 2px 2px 2px #cfcdd4;
+    width: 24%;
+    
+}
+
+.item-image{
+    border-radius: 10px;
+    transition: color .13s ease-in-out,background .13s ease-in-out,opacity .13s ease-in-out,box-shadow .13s ease-in-out;
+}
+
+.item-card:hover{
+    opacity: 0.85;
+}
+
+.item-name{
+    font-size: medium;
+}
+
+@media(max-width:1000px){
+    .item-card{
+        width: 32%;        
+    }
+}
+
+@media(max-width:750px){
+    .item-card{
+        width: 48%;
+    }
+}
+
+@media(max-width:600px){
+    .item-card{
+        width: 100%;
+    }
+    .searchContainer{
+        width: 100%;
+        margin-bottom: 20px;
+        justify-content: space-between;
+    }
+
+    .searchGenerateContainer{
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+
+
+/* THERE IS ABOUT ME STYLING----------------------------------- */
+
+/* TOP CONTAINER STYLING----------------------------------- */
+
+p{
+    font-family: 'Merriweather', serif;    
+}
+
+@media(max-width:850px){
+    .firstCloud{
+        margin-right:500px;
+    }
+}
+.top-container p{
+    line-height: 2;
+    font-size: large;
+}
+.top-container h2{
+    color: #66bfbf;
+    font-size: 2.5rem;
+    font-weight: normal;
+    text-align: center;
+}
+
+.top-container{
+  text-align: center;
+  position: relative;
+  background-color: #e4f9f5;
+}
+.firstCloud{
+    position: relative;
+    left: 340px;
+    top: 40px;
+}
+.secondCloud{
+    position: absolute;
+    left: 260px;
+    margin-top: 50px;
+
+}
+.hi-div{
+    margin-top: 95px;
+    color: #66bfbf;
+}
+
+.hi-div h1{
+    font-family: 'Sacramento', cursive;
+    font-size: 5.625rem;
+    color: #66bfbf;
+    margin-bottom: 25px;
+    font-weight: normal;
+}
+
+.pro{
+    text-decoration: underline;
+}
+
+.mountain{
+    margin-top: 50px;
+}
+
+/* MIDDLE CONTAINER STYLING----------------------------------- */
+.middle-container h2{
+    color: #66bfbf;
+    font-size: 2.5rem;
+    font-weight: normal;
+    text-align: center;
+}
+.middle-container p{
+    line-height: 2;
+    font-size: large;
+}
+
+.middle-container{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.introduction{
+    text-align: center;
+}
+.introduction p{
+    width: 30%;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.mihai-img{
+    width: 180px;
+    height: 180px;
+    margin-bottom: 20px;
+}
+
+.middle-container hr{
+    border: dotted #eaf6f6 6px;
+    border-bottom: none;
+    width: 4%;
+    margin: 100px auto;
+}
+/* MIDDLE CONTAINER SKILLS WITH FLEXBOX----------------------------------- */
+
+.skills{
+    display: flex;
+    flex-direction: column;
+}
+.skills h2{
+    margin-bottom: 100px;
+    width: 100%;
+}
+.skills img{
+    width: 250px;
+    height: 250px;
+}
+.skills h3{
+    color: #11999e;
+    margin-bottom: 20px;
+}
+.skills-container{
+    margin: 0 25% 75px;
+    display: flex;
+}
+.skills-container-text{
+    margin-left: 20px;
+}
+.pizza-text{
+    margin-top: 40px;
+}
+@media(max-width:1020px){
+    .skills-container{
+        display: block;
+        text-align: center;
+    }
+    .skills-container h3{
+        margin-top: 10px;
+    }
+}
+
+/* MIDDLE CONTAINER CONTACT ME SECTION----------------------------------- */
+.contact{
+    text-align: center;
+    margin: 0 30%;
+}
+
+.contact h2{
+    margin-bottom: 45px;
+}
+.contact h3{
+    color: #11999e;
+    margin-bottom: 45px;
+}
+.contact p{
+    margin-bottom: 45px;
+}
+.contact button{
+    background-color: #11cdd4;
+    border-radius: 8px;
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    border-color: #11cdd4;
+    border-style: none;
+}
+.contact button:hover{
+    background-color: #77d2d5;
+}
+
+/* BOTTOM CONTAINER STYLING----------------------------------- */
+
+.bottom-container{
+    background-color: #66bfbf;
+    padding: 50px;
+    text-align: center;
+}
+.bottom-container a{
+    padding: 25px;
+    text-decoration: none;
+    color:#11999e
+}
+.bottom-container a:hover{
+    color: #eaf6f6;
+}
+.bottom-container p{
+    padding-top: 40px;
+    color: white;
+    font-size: medium;
+}
+
+
+
+
+
+
+
+/* THERE IS MY CARDS-STYLING----------------------------------- */
+
+.container{
+    display: flex;
+    border-style: solid;
+    border-color: red;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+.card{
+    border-style: solid;
+    border-color: blue;
+    background-color: aqua;
+    width: 250px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 5px;
+}
+
+
+/* THERE IS MY CONTACT STYLING----------------------------------- */
+
+.contact-body{
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.all-form-items{
+    width: 50%;
+    margin: auto;
+    text-align: start;
+}
+
+.form-container{
+    display: flex;
+    justify-content: start;
+
+}
+
+.form-credentials{
+    display: flex;
+    flex-direction: column;
+    margin: 25px 25px 0px 0px;
+    width: 100%;
+}
+
+.first-messages{
+    margin-top: 40px;
+}
+
+.first-messages h2{
+    margin-bottom: 10px;
+}
+
+.first-messages p{
+    font-size: 15px;
+    color: rgba(0,0,0,0.7);
+}
+
+label{
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input{
+    width: 100%;
+    height: 35px;
+    padding-left: 10px;
+    font-size: large;
+    border-color: rgba(0,0,0,0.7);
+    border-radius: 5px;
+    border-width: 0.2px;
+}
+
+#message{
+    width: 97%;
+    height: 75px;
+}
+
+input::placeholder{
+    font-size: medium;
+}
+
+textarea::placeholder{
+    font-size: medium;
+}
+
+textarea{
+    font-size: medium;
+    padding: 10px 0 0 10px;
+    color: rgba(0,0,0,0.7);
+    border-radius: 5px;
+    border-width: 0.2px;
+}
+
+.attachments{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.doc-types{
+    color: rgba(0,0,0,0.7);
+    font-size: 15px;
+}
+
+.file{
+    display: none;
+}
+
+.choose-file{
+    margin-top: 10px;
+    width: 98%;
+    height: 80px;
+    border: 1px solid rgb(54, 53, 53);
+    border-style: dashed;
+    color: rgb(88, 88, 255);
+    font-size: medium;
+    font-weight: lighter;
+    text-align: center;
+    line-height:500%;
+    cursor: pointer;
+}
+
+.choose-file label{
+    cursor: pointer;
+}
+
+.choose-file span{
+    color: black;
+    font-weight: lighter;
+    cursor: pointer;
+}
+
+.choose-file:hover{
+    background-color: rgba(153, 153, 153, 0.4);
+    transition: 1s;
+}
+
+.end-button-div{
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.end-button-div button{
+    width: 100px;
+    height: 40px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(28, 145, 255);
+    font-size: 16px;
+    text-transform: none;
+    border-style: none;
+    border-radius: 5px;
+    transition: color .13s ease-in-out,background .13s ease-in-out,opacity .13s ease-in-out,box-shadow .13s ease-in-out;
+}
+
+.end-button-div button:active {
+  background-color: #006AE8;
+}
+
+.end-button-div button:hover {
+  background-color: #1C84FF;
+  cursor: pointer;
+}
+
+@media(max-width: 821px) {
+    .form-container{
+        flex-direction: column;
+    }
+    input{
+        width: 100%;
+    }
+    .all-form-items{
+        width: 100%;
+    }
+}
+
+/* THERE IS USER PHOTOS STYLING---------------------------- */
+
+.top-container-userphotos{
+    background-color: #2c2e31;
+    color: white;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family:sans-serif;
+    text-align: center;
+}
+.top-container-userphotos h1{
+    font-size: 48px;
+    font-weight: lighter;
+    padding-bottom:30px ;
+    align-items: center;
+}
+.top-container-userphotos h3{
+    font-weight: lighter;
+    position: relative;
+    bottom: 25px;    
+}
+
+.middle-container-userphotos{
+    max-width: 730px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#male{
+    text-align: center;
+}
+
+#female{
+    text-align: center;
+}
+
+.genderDiv{
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    font-size: xx-large;
+    color: #333;
+}
+
+.photosContainer1{
+    border-radius: 10px;
+    width: 80px;
+    height: 80px;
+    margin-right: 2px;
+    margin-bottom: 2px;
+}
+
+.photosContainer2{
+    border-radius: 10px;
+    width: 80px;
+    height: 80px;
+    margin-right: 2px;
+    margin-bottom: 2px;
+}
+
+.bottom-container-userphotos{
+    background-color: #333;
+    color: white;
+    font-family: sans-serif;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.bottom-container-userphotos h1{
+    padding-top: 20px; ;
+    padding-bottom: 20px;
+}
+
+.bottom-container-userphotos #mihai-img{
+    width: 90px;
+    height: 90px;
+    padding-top: 15px;
+}
+
+/* USERDETAILS PAGE STYLING------------------------------------------------- */
+
+.middle-container-userdetails{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: large;
+}
+
+#user-details-image{
+    padding: 20px;
+    width: 180px;
+    height: 180px;
+    border-radius: 75px;
+}
+
+#user-details-hi{
+    padding-bottom: 10px;
+    font-size: larger;
+}
+
+#user-details-name{
+    padding-bottom: 20px;
+}
+
+#user-details-email{
+    padding-top: 10px;
+}
