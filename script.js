@@ -6,7 +6,7 @@ const BASE_API = 'https://randomuser.me/api/';
 function toggleMenu(){
     const navbarList = document.getElementsByClassName('nav-list')[0]
     console.log(navbarList);
-    
+
     navbarList.classList.toggle('active')
 }
 
